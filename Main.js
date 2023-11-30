@@ -3,14 +3,17 @@ let titleText = "Can You Survive?";
 let button1, button2, button3;
 let snowflakes = [];
 let cursorTrail = [];
-let backgroundSound;
+let bgm;
 let checkEffect;
 
-
+function preload() {
+  bgImg = loadImage("Main.jpeg");
+  bgm = loadSound("BgMain.mp3");
+  bgm.rate(1.0);
+}
 function setup() {
   createCanvas(1795, 960);
-
-  bgImg = loadImage("Main.jpeg");
+  
 
   // Display the title
   textSize(48);
@@ -24,7 +27,7 @@ function setup() {
 
   button1 = createButton("Light Repair");
   button2 = createButton("Outlast");
-  button3 = createButton("Escape"); // This is the "Escape" button
+  button3 = createButton("Rocket Blaster"); // This is the "Escape" button
 
   // Center the buttons horizontally with equal spacing
   const totalButtonWidth = 3 * buttonWidth;
@@ -79,12 +82,12 @@ function draw() {
       snowflakes.splice(i, 1);
     }
   }
+  bgm.play();
+  bgm.setVolume(0.2);
 
-  // Display cursor trail
-  
 }
 
-function mousePressed(){
+function mousePressed() {
 
 }
 
@@ -98,12 +101,6 @@ function mouseMoved() {
   }
 }
 
-function backgroundMusic(){
-  backgroundSound.play();
-  backgroundSound.loop();
-  backgroundSound.setVolume(0.7);
-  userStartAudio();
-}
 function lightRepair() {
   // Add your logic for "Light Repair" button here
   console.log("Light Repair button clicked");
@@ -115,14 +112,13 @@ function outlast() {
   // Add your logic for "Outlast" button here
   console.log("Outlast button clicked");
   animateButton(button2);
-  window.location.href = "Game4.html";
+  window.location.href = "Outlast.html";
 }
 
 function escape() {
   // Add your logic for "Escape" button here
-  console.log("Escape button clicked");
   animateButton(button3);
-  window.location.href = "Game3.html";
+  window.location.href = "index.html";
 }
 
 function animateButton(button) {
