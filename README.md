@@ -1,6 +1,6 @@
 
-# XYZ 🌌
-# Welcome to XYZ, a unique collection of space-themed games designed to help stroke patients regain their mobility through engaging and therapeutic activities. Developed as part of an independent project for Arizona State University (ASU), XYZ leverages the power of HTML, CSS, and the P5JS module of JavaScript to create interactive and supportive experiences for rehabilitation.
+# RocketRescue 🌌
+# Welcome to RocketRescue, a unique collection of space-themed games designed to help stroke patients regain their mobility through engaging and therapeutic activities. Developed as part of an independent project for Arizona State University (ASU), XYZ leverages the power of HTML, CSS, and the P5JS module of JavaScript to create interactive and supportive experiences for rehabilitation.
 
 # 🚀 Features
 1. Rocket Shooter 🚀
@@ -21,4 +21,4 @@ P5JS module of JavaScript
 This project was developed as part of an independent project for Arizona State University (ASU), with the aim of providing an innovative solution for stroke rehabilitation through gamification.
 
 # 🎮 Getting Started
-To get started with XYZ, simply clone the repository and open the index.html file in your web browser:
+To get started with RocketRescue, simply clone the repository and open the index.html file in your web browser:
